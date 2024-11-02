@@ -1,62 +1,84 @@
-*,
-*:after,
-*:before {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
-  outline: none;
-}
-
-html {
-  line-height: 1.15;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-body,
-html {
-  font-family: 'IranSansWeb', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  direction: rtl;
-  scroll-behavior: smooth;
-  background-color: white;
-}
-
-body.is-overflow-deactivate {
-  overflow: hidden;
-}
-
-.main {
-  background-color: white;
+.container-excl {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1576px;
+  
+    .con_inner {
+      padding: 0 60px;
+    }
+  
+    @media (max-width : 1048px) {
+      .con_inner {
+        padding: 0 30px;
+      }
+    }
+  
+    @media (max-width : 576px) {
+      .con_inner {
+        padding: 0 20px;
+      }
+    }
+  
+    @media (max-width : 320px) {
+      .con_inner {
+        padding: 0 10px;
+      }
+    }
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #fff;
+    // padding-top: 160px;
+  
+    // @media (max-width : 1048px) {
+    //   padding-top: 160px;
+    // }
+  
+    // @media (max-width : 576px) {
+    //   padding-top: 100px;
+    // }
+}  
 
-button {
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
+.bttn {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    cursor: pointer;
+    color: $text-blue;
+    font-weight: 400;
+    font-size: 14px;
+    border: 1px solid $primary-border;
+    border-radius: $primary-radius;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-color: $main-bg;
+    height: 45px;
 
-  &:disabled {
-    cursor: not-allowed;
-    filter: grayscale(1);
+    &.btn-icon{
+      padding: 15px;
+    }
+  
+    &:disabled{
+      cursor: not-allowed;
+      background-color: #a8a8a8 !important;
+    }
+  
+    &:hover {
+      background-color: $primary-light-blue;
+      color: #fff;
+  
+      .icon::before{
+        color: $main-bg;
+      }
+    }
   }
-}
-
-input {
-  border: none;
-}
-
-a{
-  transition: 0.3s;
-}
+  
+  

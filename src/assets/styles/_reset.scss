@@ -1,0 +1,67 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  outline: none;
+}
+
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body,
+html {
+  font-family: 'IranSansWeb', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  direction: rtl;
+  scroll-behavior: smooth;
+  background-color: white;
+}
+
+body.is-overflow-deactivate {
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
+  &:disabled {
+    cursor: not-allowed;
+    filter: grayscale(1);
+  }
+}
+
+// baraye safari ta design button ha behm narizan
+[type=button],
+[type=reset],
+[type=submit],
+button {
+  -webkit-appearance: unset;
+}
+
+input {
+  border: none;
+}
+
+a{
+  transition: 0.3s;
+  text-decoration: none;
+  color: $gray666;
+  font-size: 14px;
+}
+
+ul {
+  list-style: none;
+}

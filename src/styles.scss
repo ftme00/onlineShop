@@ -1,6 +1,21 @@
-@import "./assets/styles/base";
-@import "./assets/styles/typography";
-// @import "./assets/styles/icon";
-@import "./assets/styles/bootstrap";
-
+/*--------------------------------------------------------------
+# Abstracts
+--------------------------------------------------------------*/
 @import "./assets/styles/variables";
+
+/*--------------------------------------------------------------
+# Vendors
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@import "./assets/styles/reset";
+@import "./assets/styles/base";
+@import "./assets/styles/icon";
+@import "./assets/styles/typography";
+
+/*--------------------------------------------------------------
+# Customize For myShop
+--------------------------------------------------------------*/
+@import "./assets/styles/bootstrap";
